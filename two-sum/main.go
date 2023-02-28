@@ -11,7 +11,7 @@ func main() {
 }
 
 func twoSum(nums []int, target int) []int {
-	// Make a hashmap m where element in nums is key and it's (index + 1) in nums is the value
+	// Hashmap m: element in nums is key and it's (index + 1) is the value
 	m := make(map[int]int, len(nums))
 	for i, num := range nums {
 		// Check if a value exists for the required key; if ok: return
